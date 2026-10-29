@@ -106,20 +106,22 @@ img { max-width: 100%; display: block; }
 .mainnav { border-top: 1px solid rgba(246,239,225,.18); }
 .mainnav ul {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .mainnav a {
   display: block;
-  padding: 14px 20px;
+  padding: 14px 14px;
+  white-space: nowrap;
   color: rgba(246,239,225,.88);
   text-decoration: none;
   font-size: .82rem;
   text-transform: uppercase;
-  letter-spacing: .16em;
+  letter-spacing: .12em;
   border-bottom: 3px solid transparent;
   margin-bottom: -3px;
 }
