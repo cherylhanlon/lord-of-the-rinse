@@ -339,6 +339,24 @@ blockquote.scroll-quote footer { font-family: var(--sans); font-size: .85rem; le
   color: rgba(246,239,225,.55);
 }
 
+/* ---------- Landing-page form ---------- */
+.lead-form { display: grid; gap: 14px; }
+.lead-form h3 { margin-bottom: 4px; }
+.lead-form label { display: grid; gap: 6px; font-size: .92rem; font-weight: 600; }
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  font: 400 1rem var(--sans);
+  padding: 10px 12px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--ink);
+}
+.lead-form__check { grid-template-columns: auto 1fr; align-items: start; font-weight: 400; color: var(--ink-soft); }
+.lead-form__check input { margin-top: 4px; }
+.lead-form__trap { position: absolute; left: -9999px; }
+.footer-bottom a { color: inherit; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero__inner,

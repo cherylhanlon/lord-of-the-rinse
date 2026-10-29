@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Smile Consultation — Lord of the Rinse Dental</title>
+  <meta name="description" content="Book a free 20-minute smile consultation at Lord of the Rinse Dental in Gosforth: Invisalign, whitening, bonding and implants." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+
+  <!-- An ad landing page whose form is Netlify's, not iGrow's: its enquiries reach iGrow through a Zap, as a
+       practice's website-builder form would. The iGrow form on contact.html is the direct route. -->
+
+  <header class="site-header">
+    <div class="container">
+      <div class="masthead">
+        <a class="masthead__brand" href="index.html">
+          <img class="masthead__logo" src="logo.png" alt="Lord of the Rinse Dental" />
+          <span>
+            <span class="masthead__name">Lord of the Rinse</span>
+            <span class="masthead__tag">Dental</span>
+          </span>
+        </a>
+        <div class="masthead__aside">
+          <span class="masthead__phone">0191 498 0123</span>
+          Mon – Sat, 9am – 7pm
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="padding:62px 0 68px">
+    <div class="container">
+      <span class="runes">Free smile consultation</span>
+      <h1 style="max-width:20ch">One smile to rule them all</h1>
+      <p class="lead" style="max-width:58ch">
+        Twenty minutes with one of our dentists, no charge and no obligation. Talk through straightening,
+        whitening or replacing a tooth, and leave with a written plan and price.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="section__head" style="margin-bottom:22px"><h2>What happens next</h2></div>
+        <p>
+          Send the form and we will be in touch, usually within the hour during opening times, to find a
+          time that suits you.
+        </p>
+        <ul>
+          <li>A look at your teeth and what you would like to change</li>
+          <li>Your options, with honest pros and cons</li>
+          <li>A written plan and price to take away</li>
+          <li>0% finance on Invisalign and implants</li>
+        </ul>
+      </div>
+      <form class="lead-form panel panel--light" name="smile-consultation" method="POST"
+            data-netlify="true" netlify-honeypot="company">
+        <input type="hidden" name="form-name" value="smile-consultation" />
+        <p class="lead-form__trap"><label>Leave this empty <input name="company" /></label></p>
+
+        <h3>Book your free consultation</h3>
+        <label>Full name <input name="full_name" autocomplete="name" required /></label>
+        <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+        <label>Mobile <input type="tel" name="phone" autocomplete="tel" /></label>
+        <label>I'm interested in
+          <select name="treatment">
+            <option>Invisalign</option>
+            <option>Teeth whitening</option>
+            <option>Composite bonding</option>
+            <option>Dental implants</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <label>Anything we should know? <textarea name="message" rows="3"></textarea></label>
+        <label class="lead-form__check">
+          <input type="checkbox" name="marketing_consent" value="Yes" />
+          <span>Yes, send me offers and news from Lord of the Rinse Dental by email and text. I can unsubscribe at any time.</span>
+        </label>
+        <button class="btn btn--gold" type="submit">Request my consultation</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Lord of the Rinse Dental. This is a fictional demo practice.</span>
+        <span><a href="index.html">Back to the main site</a></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
