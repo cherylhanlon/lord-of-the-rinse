@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ask Us a Question — Lord of the Rinse Dental</title>
+  <meta name="description" content="Ask Lord of the Rinse Dental a question or request a call back. The team replies the same working day." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+
+  <!-- A plain website form that emails each entry, as most practices' contact forms do. Netlify's form
+       notification sends it to an iGrow email lead source. The iGrow form on contact.html is the direct route. -->
+
+  <header class="site-header">
+    <div class="container">
+      <div class="masthead">
+        <a class="masthead__brand" href="index.html">
+          <img class="masthead__logo" src="logo.png" alt="Lord of the Rinse Dental" />
+          <span>
+            <span class="masthead__name">Lord of the Rinse</span>
+            <span class="masthead__tag">Dental</span>
+          </span>
+        </a>
+        <div class="masthead__aside">
+          <span class="masthead__phone">0191 498 0123</span>
+          Mon – Sat, 9am – 7pm
+        </div>
+      </div>
+    </div>
+    <nav class="mainnav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plans.html">Membership Plans</a></li>
+          <li><a href="treatments.html">Treatments &amp; Fees</a></li>
+          <li><a href="about.html">The Practice</a></li>
+          <li><a href="contact.html">Find Us</a></li>
+          <li><a href="consultation.html">Free Consultation</a></li>
+          <li><a href="enquiry.html" class="active">Ask a Question</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding:62px 0 68px">
+    <div class="container">
+      <span class="runes">Ask us a question</span>
+      <h1 style="max-width:20ch">Speak, friend, and enter</h1>
+      <p class="lead" style="max-width:58ch">
+        A question about a treatment, your membership or an appointment? Send it here and the team will reply,
+        or call you back, the same working day.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="section__head" style="margin-bottom:22px"><h2>Other ways to reach us</h2></div>
+        <p>Call <a href="tel:01914980123">0191 498 0123</a>, Monday to Saturday, 9am – 7pm.</p>
+        <p>If you are in pain, please call rather than writing: we hold slots back each day for emergencies.</p>
+      </div>
+      <form class="lead-form panel panel--light" name="general-enquiry" method="POST"
+            data-netlify="true" netlify-honeypot="company">
+        <input type="hidden" name="form-name" value="general-enquiry" />
+        <p class="lead-form__trap"><label>Leave this empty <input name="company" /></label></p>
+
+        <h3>Send us a message</h3>
+        <label>Name <input name="name" autocomplete="name" required /></label>
+        <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+        <label>Phone <input type="tel" name="phone" autocomplete="tel" /></label>
+        <label>What is it about?
+          <select name="treatment">
+            <option>General question</option>
+            <option>Check-up</option>
+            <option>Hygiene appointment</option>
+            <option>Membership plans</option>
+            <option>Teeth whitening</option>
+            <option>Invisalign</option>
+          </select>
+        </label>
+        <label>Your message <textarea name="message" rows="4" required></textarea></label>
+        <label class="lead-form__check">
+          <input type="checkbox" name="marketing_consent" value="Yes" />
+          <span>Yes, send me offers and news from Lord of the Rinse Dental by email and text. I can unsubscribe at any time.</span>
+        </label>
+        <button class="btn btn--gold" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Lord of the Rinse Dental. This is a fictional demo practice.</span>
+        <span><a href="index.html">Back to the main site</a></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
